@@ -37,8 +37,8 @@ entryPoint = "http"
       url = "{{ conf.dest }}"
 {% endfor %}
 
-{% for endpoint, conf in traefik_endpoints|dictsort %}
 [frontends]
+{% for endpoint, conf in traefik_endpoints|dictsort %}
   [frontends.frontend_{{ endpoint }}]
     entryPoints = ["http", "https"]
     backend = "backend_{{ endpoint }}"
