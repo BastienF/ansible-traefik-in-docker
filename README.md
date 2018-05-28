@@ -58,6 +58,13 @@ traefik_le_staging: true
 ```
 [Let's encrypt staging environnement documentation](https://letsencrypt.org/docs/staging-environment/)
 
+#### Docker networks
+```yaml
+traefik_docker_networks: []
+#traefik_docker_networks:
+#  - name: "docker_network"
+```
+
 Dependencies
 ------------
 

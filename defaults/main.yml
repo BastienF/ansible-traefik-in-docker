@@ -26,3 +26,7 @@ traefik_endpoints: {}
 #    dest: "http://perdu.com"
 #    # If true generate let's encrypt certificate for specified host
 #    host_gen_cert: true
+
+traefik_docker_networks: []
+#traefik_docker_networks:
+#  - name: "docker_network"
