@@ -65,6 +65,11 @@ traefik_docker_networks: []
 #  - name: "docker_network"
 ```
 
+#### Docker container restart policy
+```yaml
+traefik_container_restart_policy: "always" #(always, no, on-failure, unless-stopped)
+```
+
 Dependencies
 ------------
 

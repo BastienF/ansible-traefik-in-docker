@@ -10,6 +10,7 @@
     state: "{{ traefik_docker_state | default('started') }}"
     restart: "{{ traefik_docker_restart | default(false) | bool }}"
     networks: "{{ traefik_docker_networks }}"
+    restart_policy: "{{ traefik_container_restart_policy }}"
     volumes:
       - "{{ traefik_conf_location }}/traefik.toml:/etc/traefik/traefik.toml"
     ports:
