@@ -2,6 +2,12 @@
 
 - meta: flush_handlers
 
+- name: Create a network
+  become: true
+  docker_network:
+    name: "{{ item.name }}"
+  with_items: "{{ traefik_docker_networks }}"
+
 - name: Start or restart traefik container
   become: true
   docker_container:
