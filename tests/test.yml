@@ -11,3 +11,4 @@
           host: "test.localhost"
           dest: "http://perdu.com"
           host_gen_cert: false
+          basicAuth: ["user:$apr1$rlKUkg4S$jS2VgSkGnnexLc.K55zFa."]

@@ -26,6 +26,8 @@ traefik_endpoints: {}
 #    dest: "http://perdu.com"
 #    # If true generate let's encrypt certificate for specified host
 #    host_gen_cert: true
+#    # Optional, basic auth. List of pairs of user and password generated with htpasswd (htpasswd -nb "user" "password")
+#    basicAuth: ["user:$apr1$rlKUkg4S$jS2VgSkGnnexLc.K55zFa."]
 
 traefik_docker_networks: []
 #traefik_docker_networks:
