@@ -34,3 +34,5 @@ traefik_docker_networks: []
 #  - name: "docker_network"
 
 traefik_container_restart_policy: "always"
+
+traefik_https_only: false

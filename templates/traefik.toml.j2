@@ -6,6 +6,11 @@ address = ":8080"
 [entryPoints]
   [entryPoints.http]
   address = ":80"
+{% if traefik_https_only|bool %}
+    [entryPoints.http.redirect]
+      regex = "^http://(.*)"
+      replacement = "https://$1"
+{% endif %}
   [entryPoints.https]
   address = ":443"
     [entryPoints.https.tls]
