@@ -48,7 +48,7 @@ entryPoint = "http"
     entryPoints = ["http", "https"]
     backend = "backend_{{ endpoint }}"
     {% if conf.basicAuth is defined %}
-    basicAuth = {{ conf.basicAuth }}
+    basicAuth = {{ conf.basicAuth|to_json }}
     {% endif %}
     [frontends.frontend_{{ endpoint }}.routes.host]
     rule = "Host:{{ conf.host }}"
