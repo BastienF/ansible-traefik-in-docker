@@ -8,6 +8,9 @@ traefik_root_location: "/opt/docker-data/{{ traefik_container_name }}"
 # Path on the host filesystem where will be the traefik conf file
 traefik_conf_location: "{{ traefik_root_location }}/conf"
 
+# Path on the host filesystem where will be the traefik cert files
+traefik_certs_location: "{{ traefik_root_location }}/certs"
+
 # Host exposed HTTP/HTTPS/Admin ports for traefik
 traefik_http_port: 80
 traefik_https_port: 443

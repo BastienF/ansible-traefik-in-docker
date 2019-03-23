@@ -19,6 +19,7 @@
     restart_policy: "{{ traefik_container_restart_policy }}"
     volumes:
       - "{{ traefik_conf_location }}/traefik.toml:/etc/traefik/traefik.toml"
+      - "{{ traefik_certs_location }}:{{ traefik_container_certs_location }}"
     ports:
       - "{{ traefik_http_port }}:80"
       - "{{ traefik_http_admin_port }}:8080"

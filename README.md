@@ -43,6 +43,7 @@ traefik_container_name: "traefik"
 ```yaml
 traefik_root_location: "/opt/docker-data/{{ traefik_container_name }}"
 traefik_conf_location: "{{ traefik_root_location }}/conf"
+traefik_certs_location: "{{ traefik_root_location }}/certs"
 ```
 
 #### Host exposed HTTP/HTTPS/Admin ports for traefik
