@@ -16,7 +16,7 @@ address = ":8080"
     [entryPoints.https.tls]
 
 [acme]
-email = "fiorentino.bastien@gmail.com"
+email = "{{ traefik_le_contact_email }}"
 storage = "{{ traefik_container_certs_location }}/acme.json"
 entryPoint = "https"
 {% if traefik_le_staging|bool %}
