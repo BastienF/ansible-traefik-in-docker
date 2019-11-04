@@ -20,7 +20,7 @@ traefik_http_admin_port: 8080
 traefik_le_staging: true
 
 # Let's encrypt contact email address
-traefik_le_contact_email: "fiorentino.bastien@gmail.com"
+# traefik_le_contact_email: "techsupport@mycompany.com"
 
 # List of all proxified endpoints
 traefik_endpoints: {}
