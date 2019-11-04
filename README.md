@@ -59,6 +59,11 @@ traefik_le_staging: true
 ```
 [Let's encrypt staging environnement documentation](https://letsencrypt.org/docs/staging-environment/)
 
+#### Let's Encrypt contact email address
+```yaml
+traefik_le_contact_email: techsupport@mycompany.com
+```
+
 #### Docker networks
 ```yaml
 traefik_docker_networks: []
