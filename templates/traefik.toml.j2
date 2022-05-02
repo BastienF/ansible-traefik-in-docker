@@ -47,6 +47,7 @@ entryPoint = "http"
   [frontends.frontend_{{ endpoint }}]
     entryPoints = ["http", "https"]
     backend = "backend_{{ endpoint }}"
+    passHostHeader = true
     {% if conf.basicAuth is defined %}
     basicAuth = {{ conf.basicAuth|to_json }}
     {% endif %}
